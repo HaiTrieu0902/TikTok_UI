@@ -1,16 +1,14 @@
-import Header from '../components/Header';
-import SlideBar from './SlideBar';
+import Header from '../components/Header/Header';
 
-function DefaultLayout({ children }) {
+function HeaderOnly({ children }) {
     return (
         <div>
             <Header />
             <div className="container">
-                <SlideBar />
                 <div className="Content">{children} </div>
             </div>
         </div>
     );
 }
 
-export default DefaultLayout;
+export default HeaderOnly;

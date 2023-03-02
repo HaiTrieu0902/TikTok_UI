@@ -1,0 +1,53 @@
+.menu-items {
+    width: 224px;
+
+    .separate {
+        border-top: 1px solid #ccc;
+    }
+}
+
+.menu-item > button {
+    justify-content: flex-start;
+    width: 100%;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.menu-item > a {
+    justify-content: flex-start;
+    width: 100%;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.menu-item:last-child {
+    padding-bottom: 10px;
+}
+
+.menu-item:not(:first-child) {
+    margin-top: 4px;
+}
+.menu-body {
+    overflow-y: auto;
+}
+
+.header {
+    flex-shrink: 0;
+    position: relative;
+    height: 50px;
+}
+
+.back-btn {
+    width: 50px;
+    height: 100%;
+    background-color: transparent;
+}
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
